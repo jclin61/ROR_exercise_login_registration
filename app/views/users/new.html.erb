@@ -1,0 +1,13 @@
+<% content_for :title do %> Add Userem <% end %>
+
+<h1>Users#new</h1>
+<p>Find me in app/views/users/new.html.erb</p>
+<form action="/posts" method="post">
+	<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+	Name <input type = "text" name = "name"><br>
+	E-Mail <input type = "text" name = "email"><br>
+	Password <input type = "password" name = "password"><br>
+	Confirm Password <input type = "password" name = "password_confirm"><br>
+	<input type = "submit" value = "Register">
+
+</form>
